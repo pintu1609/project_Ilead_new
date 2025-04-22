@@ -35,28 +35,33 @@ const Home = () => {
 
         {/* Hero Text Overlay */}
         <div
-          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-1000"
-          data-aos="fade-in"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2e3a59]">
-           <span className="border-b-4 border-[var(--accent-color)] text-[var(--accent-color)]">  Welcome to ILead Global Foundation</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700 mt-4 max-w-2xl">
-            Empowering leaders, fostering innovation, and driving social transformation for a better tomorrow.
-          </p>
-          <div className="flex mt-6 gap-4 flex-wrap justify-center ">
-            <a href="#about" className="btn-get-started bg-[#1acc8d] rounded-full py-2 px-4 text-white">
-              Get Started
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-              className="btn-watch-video flex items-center"
-            >
-  <BsPlayCircle className="w-6 h-6 mr-2 text-[#1acc8d]" />
-  <span className="ml-2 text-white">Watch Video</span>
-            </a>
-          </div>
-        </div>
+  className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-[1000]"
+  data-aos="fade-in"
+>
+  <h1 className="text-4xl md:text-5xl font-bold text-white">
+    <span className="bg-black/10 px-2 rounded">
+      <span className="border-b-4 border-[var(--accent-color)] text-[var(--accent-color)]">
+        Welcome to ILead Global Foundation
+      </span>
+    </span>
+  </h1>
+  <p className="text-lg md:text-xl text-white mt-4 max-w-2xl bg-black/10 px-4 py-2 rounded">
+    Empowering leaders, fostering innovation, and driving social transformation for a better tomorrow.
+  </p>
+  <div className="flex mt-6 gap-4 flex-wrap justify-center">
+    <a href="#about" className="btn-get-started bg-[#1acc8d] rounded-full py-2 px-4 text-white">
+      Get Started
+    </a>
+    <a
+      href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+      className="btn-watch-video flex items-center"
+    >
+      <BsPlayCircle className="w-6 h-6 mr-2 text-[#1acc8d]" />
+      <span className="ml-2 text-white">Watch Video</span>
+    </a>
+  </div>
+</div>
+
 
         {/* Waves */}
         <svg className={`${style["hero-waves"]}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
