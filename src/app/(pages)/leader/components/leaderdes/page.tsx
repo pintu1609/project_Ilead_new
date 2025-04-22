@@ -166,7 +166,7 @@ const Leaderdes: React.FC = () => {
         <div>
           <h2 className="text-4xl font-bold mt-2">Join the Leadership Network</h2>
           <p className="text-gray-600 mt-4 text-lg">
-            If you're passionate about leadership and change, join us...
+          If you&apos;re passionate about leadership and change, join us...
           </p>
         </div>
       </section>
