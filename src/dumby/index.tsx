@@ -18,6 +18,11 @@ export const links = [
             url: 'leader',
             
           },
+          {
+            name: 'Events',
+            url: 'events',
+            
+          },
           // {
           //   name: 'Blog',
           //   url: 'blog',

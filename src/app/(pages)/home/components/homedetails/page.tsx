@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import Testimonial from '../testomonial/page';
 
 const Homedetails: React.FC = () => {
   return (
@@ -106,6 +107,10 @@ const Homedetails: React.FC = () => {
           ))}
         </div>
       </motion.div>
+
+      <div>
+        <Testimonial/>
+      </div>
 
       {/* Call to Action */}
       <motion.div
