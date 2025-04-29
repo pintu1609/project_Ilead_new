@@ -1,4 +1,4 @@
-import { sendEmail } from "@/utls";
+// import { sendEmail } from "@/utls";
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
 type marketingEmail = {
@@ -25,7 +25,7 @@ export  async function POST(
           });
           const googleSheetClient = google.sheets({ version: "v4", auth });
 
-          const range = 'Sheet1!A:A'; // Adjust the range if necessary
+          const range = 'Sheet2!A:A'; // Adjust the range if necessary
 
           const response = await googleSheetClient.spreadsheets.values.get({
             spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID!,
@@ -41,7 +41,7 @@ export  async function POST(
         } else {
           await googleSheetClient.spreadsheets.values.append({
             spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
-            range: 'Sheet1!A1',
+            range: 'Sheet2!A1',
             valueInputOption: 'USER_ENTERED',
             insertDataOption: 'INSERT_ROWS',
             requestBody: {
@@ -49,17 +49,17 @@ export  async function POST(
             },
           });
 
-          const subject = 'New Subscriber Alert!';
-          const desc = `Hi Admin,
+          // const subject = 'New Subscriber Alert!';
+          // const desc = `Hi Admin,
 
-          You have a new contact form submission with the following details:
+          // You have a new contact form submission with the following details:
           
-          - **Email:** ${body.email}
+          // - **Email:** ${body.email}
          
-          Best regards,
-          The System`;
+          // Best regards,
+          // The System`;
           // send email to client
-          await sendEmail({subject, desc});
+          // await sendEmail({subject, desc});
 
           return NextResponse.json({ message: 'Email added successfully' }, { status: 200 });
 

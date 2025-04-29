@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-0 left-0 w-full bg-black flex flex-col items-center gap-4 py-4 shadow-lg">
+        <div className="md:hidden absolute top-0 left-0 w-full bg-black flex flex-col items-center gap-4 py-4 shadow-lg z-[100]">
             <Link href="/home" className="text-lg text-white py-2 hover:underline" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               Home 
             </Link>

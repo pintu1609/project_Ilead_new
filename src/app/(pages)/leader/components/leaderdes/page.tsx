@@ -6,20 +6,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const leaders = [
   {
+    id: 1,
     name: "John Doe",
     role: "Founder & CEO",
     image: "/img/dumby_img.jpeg",
     description: "John Doe is a visionary leader with a passion for social change...",
   },
   {
+    id: 2,
     name: "Jane Smith",
     role: "Director of Leadership Programs",
     image: "/img/dumby_img.jpeg",
     description: "Jane Smith specializes in leadership education and training...",
   },
   {
+    id: 3,
     name: "Michael Johnson",
     role: "Head of Innovation & Research",
     image: "/img/dumby_img.jpeg",
@@ -36,10 +42,21 @@ const risingLeadersImages = [
 const Leaderdes: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  
   useEffect(() => {
+    const savedIndex = localStorage.getItem("risingImageIndex");
+    if (savedIndex) {
+      setCurrentImageIndex(parseInt(savedIndex));
+    }
+
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % risingLeadersImages.length);
+      setCurrentImageIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % risingLeadersImages.length;
+        localStorage.setItem("risingImageIndex", nextIndex.toString());
+        return nextIndex;
+      });
     }, 5000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -116,40 +133,31 @@ const Leaderdes: React.FC = () => {
 
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {leaders.map((leader, index) => (
-            <div className="col-lg-4 col-md-6 team" data-aos="fade-up" data-aos-delay={index * 100} key={index}>
-             <div className="member relative">
-  <div className="pic overflow-hidden mb-12">
-    <Image
-      src={leader.image}
-      alt={leader.name}
-      width={400}
-      height={300}
-      className="img-fluid"
-    />
-  </div>
-  <div className="member-info absolute bottom-[-50px] left-5 right-5 bg-white text-[color-mix(in srgb,#444444,transparent%2020%)] shadow-[0px_2px_15px_rgba(0,_0,_0,_0.1)] p-5 overflow-hidden transition-all duration-500 w-4/5">
-    <h4 className="font-bold text-lg relative text-[#040677]">John Doe</h4>
-    <hr className="border-[color-mix(in srgb,#444444,transparent%2020%)] my-2 h-[4px] w-1/5"/>
-    <div className=" flex justify-between items-center">
-    <span className="italic text-sm">Founder & CEO</span>
-    <div className=" flex gap-3">
-      <a href="" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color">
-        <FaTwitter />
-      </a>
-      <a href="" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color">
-        <FaFacebook />
-      </a>
-      <a href="" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color">
-        <FaInstagram />
-      </a>
-      <a href="" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color">
-        <FaLinkedin />
-      </a>
-    </div>
-    </div>
-  </div>
-</div>
-
+            <div className="col-lg-4 col-md-6 team" key={leader.id}>
+              <div className="member relative">
+                <div className="pic overflow-hidden mb-12">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    width={400}
+                    height={300}
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="member-info absolute bottom-[-50px] left-5 right-5 bg-white text-[color-mix(in srgb,#444444,transparent%2020%)] shadow-[0px_2px_15px_rgba(0,_0,_0,_0.1)] p-5 overflow-hidden transition-all duration-500 w-4/5">
+                  <h4 className="font-bold text-lg relative text-[#040677]">{leader.name}</h4>
+                  <hr className="border-[color-mix(in srgb,#444444,transparent%2020%)] my-2 h-[4px] w-1/5" />
+                  <div className="flex justify-between items-center">
+                    <span className="italic text-sm">{leader.role}</span>
+                    <div className="flex gap-3">
+                      <a href="#" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color"><FaTwitter /></a>
+                      <a href="#" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color"><FaFacebook /></a>
+                      <a href="#" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color"><FaInstagram /></a>
+                      <a href="#" className="transition-colors duration-300 text-[color-mix(in srgb,var(--default-color),transparent%2070%)] hover:text-accent-color"><FaLinkedin /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -166,7 +174,7 @@ const Leaderdes: React.FC = () => {
         <div>
           <h2 className="text-4xl font-bold mt-2">Join the Leadership Network</h2>
           <p className="text-gray-600 mt-4 text-lg">
-          If you&apos;re passionate about leadership and change, join us...
+            If you&apos;re passionate about leadership and change, join us...
           </p>
         </div>
       </section>

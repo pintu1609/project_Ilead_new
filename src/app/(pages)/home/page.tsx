@@ -38,7 +38,7 @@ const Home = () => {
           >
             {['/img/homes.jpeg', '/img/home2.jpeg', '/img/home3.jpeg', '/img/home4.jpeg', '/img/home5.jpeg'].map((src, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-full h-[80vh]">
+                <div className="relative w-full aspect-[16/9]">
                   <Image
                     src={src}
                     alt={`Slide ${index + 1}`}
@@ -54,21 +54,20 @@ const Home = () => {
         </div>
 
         <div
-          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-[1000]"
+          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-[10]"
           data-aos="fade-in"
         >
           <div className='bg-black/25 px-4 py-2 rounded flex flex-col justify-center items-center '>
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
+            <h1 className="text-3xl md:text-4xl font-bold text-white max-w-4xl">
 
-              <span className="px-2 rounded">
+              <span className="px-2 rounded ">
                 <span className="border-b-4 border-[var(--accent-color)] text-[var(--accent-color)]">
-                  Welcome to ILead Global Foundation
+                Empowering Leadership. Inspiring Change. Building Tomorrow.
                 </span>
               </span>
             </h1>
             <p className="text-lg md:text-xl text-white mt-4 max-w-2xl bg-black/10 px-4 py-2 rounded ">
-              Empowering leaders, fostering innovation, and driving social transformation for a better tomorrow.
-            </p>
+            ILead Global Foundation is a platform committed to nurturing inclusive leadership, enabling personal and professional transformation, and shaping a progressive India.            </p>
           </div>
           <div className="flex mt-6 gap-4 flex-wrap justify-center">
             <a href="#about" className="btn-get-started bg-[#1acc8d] rounded-full py-2 px-4 text-white">
