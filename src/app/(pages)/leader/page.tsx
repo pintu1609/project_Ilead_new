@@ -9,7 +9,7 @@ const Leader: React.FC = () => {
     <div className="bg-[#f5f5f5]">
       <div className={`flex flex-col gap-6 w-full ${style.container}`}>
         <Image
-          src="/img/ourleader.png"
+          src="/img/leadermain.jpeg"
           alt="Our Leader"
           layout="fill"
           quality={100}

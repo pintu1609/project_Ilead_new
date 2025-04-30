@@ -53,14 +53,14 @@ const Footer = () => {
             <div className="container mx-auto flex flex-col items-center px-4 sm:w-4/5 w-full py-6 ">
                 <p className="text-4xl mb-2 py-16 text-center">GET CONNECT WITH US</p>
                 <div className="flex gap-4">
-                    <Link href="https://www.facebook.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
+                    <Link href="https://www.facebook.com/IleadIndia" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
                         <React.Fragment>
                             <span className="text-[#1c1c1d] hover:text-white">
                                 <FaFacebookF size={24} />
                             </span>
                         </React.Fragment>
                     </Link>
-                    <Link href="https://twitter.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
+                    <Link href="https://twitter.com/@ileadglobe" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
                         <React.Fragment>
 
                             <span className="text-[#1c1c1d] hover:text-white">
@@ -69,7 +69,7 @@ const Footer = () => {
                         </React.Fragment>
 
                     </Link>
-                    <Link href="https://www.instagram.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
+                    <Link href="https://www.instagram.com/IleadIndia" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
                         <React.Fragment>
 
                             <span className="text-[#1c1c1d] hover:text-white">
@@ -78,7 +78,7 @@ const Footer = () => {
                         </React.Fragment>
 
                     </Link>
-                    <Link href="https://www.linkedin.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
+                    {/* <Link href="https://www.linkedin.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
                         <React.Fragment>
 
                             <span className="text-[#1c1c1d] hover:text-white">
@@ -86,7 +86,7 @@ const Footer = () => {
                             </span>
                         </React.Fragment>
 
-                    </Link>
+                    </Link> */}
 
                     <Link href="mailto:your-email@example.com" passHref className='bg-white p-1 rounded rounded-full hover:bg-blue-500'>
                         <React.Fragment>

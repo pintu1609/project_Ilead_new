@@ -1,0 +1,14 @@
+.swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #facc15 !important; /* Tailwind yellow-400 */
+    opacity: 1 !important;
+    transform: scale(1.2);
+  }
+  

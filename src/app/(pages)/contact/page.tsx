@@ -58,12 +58,12 @@ const ContactPage = () => {
     <section id="contact" className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="text-left mb-12" data-aos="fade-up">
-          <h2 className="flex items-end text-3xl font-bold text-gray-800">
-            Contact <hr className="w-32 h-1 ml-2 mt-2 bg-indigo-600" />
+          <h2 className="flex items-end text-3xl font-bold text-[#040677]">
+            Contact <hr className="w-32 h-1 ml-2 mt-2 bg-[#040677]" />
           </h2>
           <p className="text-lg text-gray-600">
             <span>Check Our </span>
-            <span className="text-indigo-600 font-semibold">Contact</span>
+            <span className="text-[#040677] font-semibold">Contact</span>
           </p>
         </div>
 

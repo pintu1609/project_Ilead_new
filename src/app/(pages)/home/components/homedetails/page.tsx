@@ -36,8 +36,8 @@ const Homedetails: React.FC = () => {
         viewport={{ once: true }}
         className="sm:p-10 p-4 text-center"
       >
-        <h2 className="text-4xl font-semibold">Who We Are</h2>
-        <Image src="/img/home.png" alt="Who We Are" width={800} height={400} className="w-full mt-4 rounded-lg shadow-md" />
+        <h2 className="flex items-center text-[#040677] text-4xl font-semibold">Who We Are <hr className="w-32 h-[2px] ml-2 mt-2 bg-[#040677]" /></h2>
+        <Image src="/img/whoweare.jpeg" alt="Who We Are" width={800} height={400} className="w-full mt-4 rounded-lg shadow-md" />
         <p className="mt-4 text-lg text-[#848484] text-justify">
         ILead Global Foundation is a youth-centric, non-profit organization registered in 2019 with a singular vision — to nurture the next generation of inclusive and impactful leaders.        </p>
         <p className="mt-4 text-lg text-[#848484] text-justify">
@@ -49,25 +49,25 @@ const Homedetails: React.FC = () => {
 
       {/* Core Philosophy Section */}
       <motion.div
-        className="sm:p-10 p-4 bg-white shadow-lg rounded-lg"
+        className="sm:p-10 p-4 rounded-lg"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-semibold text-center">Our Core Philosophy</h2>
-        <p className="mt-4 text-lg text-[#848484] text-center">
+        <h2 className=" flex items-center text-4xl font-semibold text-[#040677] text-left">Our Core Philosophy <hr className="w-32 h-[2px] ml-2 mt-2 bg-[#040677]" /></h2>
+        <p className="mt-4 text-lg text-[#848484] text-justify">
         Empowering young minds through structured mentorship and inclusive leadership opportunities.
         </p>
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           <motion.div whileHover={{ scale: 1.05 }} className=" bg-[#f0f0f0] rounded-lg shadow-md pb-4 ">
-            <Image src="/img/home.png" alt="Connect" width={400} height={400} className="mx-auto w-full rounded-t-lg h-64" />
+            <Image src="/img/connect.jpeg" alt="Connect" width={400} height={400} className="mx-auto w-full rounded-t-lg h-64" />
             <h3 className="text-2xl font-semibold mt-2 text-center">Connect</h3>
             <p className="mt-2 text-[#848484] px-4 pb-2 text-justify text-lg">Bridging ambition with access.</p>
             <p className='text-[#848484] px-4 text-justify text-lg'>We identify promising individuals from diverse and underrepresented communities and connect them with experienced leaders, mentors, and collaborators. This network of support provides the first step toward unlocking confidence, guidance, and opportunity.</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} className=" bg-[#f0f0f0] rounded-lg shadow-md pb-4 ">
-            <Image src="/img/home.png" alt="Nurture" width={400} height={100} className="w-full mx-auto rounded-t-lg h-64" />
+            <Image src="/img/nature.jpeg" alt="Nurture" width={400} height={100} className="w-full mx-auto rounded-t-lg h-64" />
             <h3 className="text-2xl font-semibold mt-2 text-center">Nurture</h3>
             <p className="mt-2 text-[#848484] px-4 pb-2 text-justify text-lg ">Cultivating leadership through shared learning.
             </p>
@@ -76,7 +76,7 @@ const Homedetails: React.FC = () => {
 
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} className="bg-[#f0f0f0] rounded-lg shadow-md pb-4">
-            <Image src="/img/ourinitiative.png" alt="Develop" width={400} height={100} className="w-full mx-auto rounded-t-lg h-64" />
+            <Image src="/img/develop.jpeg" alt="Develop" width={400} height={100} className="w-full mx-auto rounded-t-lg h-64" />
             <h3 className="text-2xl font-semibold mt-2 text-center">Develop</h3>
             <p className="mt-2 text-[#848484] px-4 pb-2 text-justify text-lg">Shaping the changemakers of tomorrow.
             </p>
@@ -93,8 +93,8 @@ const Homedetails: React.FC = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-semibold">Our Flagship Initiatives</h2>
-        <p className='mt-4 text-lg text-[#848484]'>Building inclusive leadership through purpose-driven programs.
+        <h2 className="flex items-center text-left text-[#040677] text-4xl font-semibold">Our Flagship Initiatives <hr className="w-32 h-[2px] ml-2 mt-2 bg-[#040677]" /></h2>
+        <p className='mt-4 text-lg text-[#848484] text-justify'>Building inclusive leadership through purpose-driven programs.
         </p>
         <div className="grid md:grid-cols-3 gap-6 mt-6 ">
           {initiativesData.map((initiative, index) => (
@@ -110,14 +110,14 @@ const Homedetails: React.FC = () => {
 
       {/* Why iLead Section */}
 <motion.div
-  className="sm:p-10 p-4 text-center bg-white mt-10 shadow-md rounded-lg"
+  className="sm:p-10 p-4 text-center mt-10  rounded-lg"
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
   viewport={{ once: true }}
 >
-  <h2 className="text-4xl font-semibold">Why iLead?</h2>
-  <p className="mt-4 text-lg text-[#848484] italic">
+  <h2 className="flex items-center text-[#040677] text-4xl font-semibold">Why iLead? <hr className="w-32 h-[2px] ml-2 mt-2 bg-[#040677]" /></h2>
+  <p className="mt-4 text-lg text-[#848484] italic text-justify">
     Because leadership must be inclusive, intentional, and inspired.
   </p>
   <p className="mt-6 text-lg text-[#848484] text-justify">

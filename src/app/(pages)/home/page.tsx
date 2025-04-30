@@ -32,7 +32,7 @@ const Home = () => {
           <Swiper
             modules={[Autoplay, EffectFade]}
             effect="fade"
-            autoplay={{ delay: 30000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             className="w-full h-[80vh] "
           >
@@ -71,14 +71,14 @@ const Home = () => {
           </div>
           <div className="flex mt-6 gap-4 flex-wrap justify-center">
             <a href="#about" className="btn-get-started bg-[#1acc8d] rounded-full py-2 px-4 text-white">
-              Get Started
+            Explore Our Programs
             </a>
             <a
-              href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+              href="/contact"
               className="btn-watch-video flex items-center"
             >
-              <BsPlayCircle className="w-6 h-6 mr-2 text-[#1acc8d]" />
-              <span className="ml-2 text-white">Watch Video</span>
+              {/* <BsPlayCircle className="w-6 h-6 mr-2 text-[#1acc8d]" /> */}
+              <span className="ml-2 text-white">Get Involved</span>
             </a>
           </div>
         </div>
