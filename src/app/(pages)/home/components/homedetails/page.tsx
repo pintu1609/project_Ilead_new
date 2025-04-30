@@ -96,7 +96,7 @@ const Homedetails: React.FC = () => {
         <h2 className="flex items-center text-left text-[#040677] text-4xl font-semibold">Our Flagship Initiatives <hr className="w-32 h-[2px] ml-2 mt-2 bg-[#040677]" /></h2>
         <p className='mt-4 text-lg text-[#848484] text-justify'>Building inclusive leadership through purpose-driven programs.
         </p>
-        <div className="grid md:grid-cols-3 gap-6 mt-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 ">
           {initiativesData.map((initiative, index) => (
             <motion.div key={index} whileHover={{ scale: 1.05 }} className=" bg-white rounded-lg shadow-md">
               <Image src={initiative.img} alt={initiative.title} width={400} height={100} className="w-full rounded-t-lg h-64" />
