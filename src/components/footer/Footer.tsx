@@ -9,7 +9,7 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const [isEmailInvalid, setIsEmailInvalid] = useState(false);
     const [loading, setLoading] = useState(false);
-    
+
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
         // Simple email validation
@@ -106,35 +106,47 @@ const Footer = () => {
                         <h3 className='text-white text-lg'>Company</h3>
                         <div className='flex gap-10'>
                             <div className='flex flex-col gap-2'>
-                        <Link href="/about" passHref>
+                                <Link href="/about" passHref>
 
-                            <p className=' text-[#5e5e5e] text-sm hover:text-white' >About</p>
-                        </Link>
-                        
-                        <Link href="/leader" passHref>
+                                    <p className=' text-[#5e5e5e] text-sm hover:text-white' >About</p>
+                                </Link>
+                                <Link href="/events" passHref>
+
+                                    <p className=' text-[#5e5e5e] text-sm hover:text-white' >Events</p>
+                                </Link>
+
+                                {/* <Link href="/leader" passHref>
 
                         <p className=' text-[#5e5e5e] text-sm hover:text-white' >Leader</p>
                         </Link>
                         <Link href="/contact" passHref>
 
                             <p className='text-[#5e5e5e] text-sm hover:text-white'>Contact US</p>
-                        </Link>
-                        </div>
-                        <div className='flex flex-col gap-2'>
-                        <Link href="/initiatives" passHref>
+                        </Link> */}
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <Link href="/leader" passHref>
+
+                                    <p className=' text-[#5e5e5e] text-sm hover:text-white' >Leader</p>
+                                </Link>
+                                <Link href="/contact" passHref>
+
+                                    <p className='text-[#5e5e5e] text-sm hover:text-white'>Contact US</p>
+                                </Link>
+                                {/* <Link href="/initiatives" passHref>
 
                         <p className=' text-[#5e5e5e] text-sm hover:text-white' >Initiatives</p>
-                        </Link>
-                        <Link href="/blog" passHref>
+                        </Link> */}
+                                {/* <Link href="/blog" passHref>
 
                         <p className=' text-[#5e5e5e] text-sm hover:text-white' >Blog</p>
                         </Link>
-                        
-                          {/* <Link href="/contact" passHref>
+                         */}
+                                {/* <Link href="/contact" passHref>
 
                             <p className='text-[#5e5e5e] text-sm hover:text-white'>Contact US</p>
                           </Link> */}
-                        </div>
+                            </div>
                         </div>
 
                     </div>

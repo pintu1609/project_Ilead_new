@@ -74,7 +74,7 @@ const Leaderdes: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-indigo-600 text-4xl font-bold text-center"
+        className="text-indigo-600 text-4xl font-semibold text-center"
       >
         Our Leaders
       </motion.h1>
@@ -83,14 +83,14 @@ const Leaderdes: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="text-gray-600 mt-4"
+        className="text-gray-600 mt-4 text-justify text-lg"
       >
         ILead Global Foundation is proud to have a team of visionary leaders. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rem nostrum laborum voluptate similique blanditiis cum. Quod, nihil quasi nam adipisci esse similique facilis deserunt non earum, labore vel voluptatem?
       </motion.p>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold mt-2 text-center">Rising Leaders 2023–2024</h2>
-        <p className="text-gray-600 mt-4">
+        <h2 className="text-4xl font-semibold mt-2 text-center">Rising Leaders 2023–2024</h2>
+        <p className="text-gray-600 mt-4 text-justify text-lg">
           ILEAD has successfully conducted two courses of the <strong>Rising Leaders</strong> program...
         </p>
 
@@ -108,7 +108,7 @@ const Leaderdes: React.FC = () => {
             <p className="text-indigo-600 text-xl font-semibold">
               This program, supported by <strong>ONGC</strong>...
             </p>
-            <ul className="list-disc ml-5 space-y-1 text-gray-600 mt-4">
+            <ul className="list-disc ml-5 space-y-1 text-gray-600 mt-4 text-lg">
               <li>Leadership types and styles</li>
               <li>Leadership in elections</li>
               <li>Effective communication</li>
@@ -126,8 +126,8 @@ const Leaderdes: React.FC = () => {
       </section>
 
       <section className="mt-16">
-        <h2 className="text-4xl font-bold mt-2 text-center">Meet Our Leaders</h2>
-        <p className="text-gray-600 mt-4">
+        <h2 className="text-4xl font-semibold mt-2 text-center">Meet Our Leaders</h2>
+        <p className="text-gray-600 mt-4 text-justify text-lg">
           Our leadership team comprises experts in education, policy-making Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, perferendis, sunt corporis quos atque placeat in quis voluptas quod voluptate animi quae voluptatum enim, impedit provident natus non ducimus veniam!
         </p>
 
@@ -165,14 +165,14 @@ const Leaderdes: React.FC = () => {
 
       <section className="mt-16 space-y-10">
         <div>
-          <h2 className="text-4xl font-bold mt-2">The Role of Our Leaders</h2>
+          <h2 className="text-4xl font-semibold mt-2">The Role of Our Leaders</h2>
           <p className="text-lg text-gray-600 mt-4">
             Our leaders actively engage in mentoring, advocacy, and outreach...
           </p>
         </div>
 
         <div>
-          <h2 className="text-4xl font-bold mt-2">Join the Leadership Network</h2>
+          <h2 className="text-4xl font-semibold mt-2">Join the Leadership Network</h2>
           <p className="text-gray-600 mt-4 text-lg">
             If you&apos;re passionate about leadership and change, join us...
           </p>

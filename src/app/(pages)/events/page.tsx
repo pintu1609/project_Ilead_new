@@ -68,7 +68,7 @@ const Events = () => {
                 />
                 {item.desc&&
               <div className={styles.galleryInfo}>
-                <p>{item.desc}</p>
+                <p className='text-lg'>{item.desc}</p>
               </div>}
               </a>
             </div>

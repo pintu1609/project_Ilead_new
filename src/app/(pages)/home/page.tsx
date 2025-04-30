@@ -32,18 +32,18 @@ const Home = () => {
           <Swiper
             modules={[Autoplay, EffectFade]}
             effect="fade"
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             loop={true}
-            className="w-full h-[80vh]"
+            className="w-full h-[80vh] "
           >
             {['/img/homes.jpeg', '/img/home2.jpeg', '/img/home3.jpeg', '/img/home4.jpeg', '/img/home5.jpeg'].map((src, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-full aspect-[16/9]">
+                <div className="relative w-full aspect-[16/9] h-[80vh] rounded-none">
                   <Image
                     src={src}
                     alt={`Slide ${index + 1}`}
                     fill
-                    className=" rounded-lg opacity-90"
+                    className="rounded-none opacity-90"
                     priority={index === 0}
                   />
                 </div>
@@ -61,7 +61,7 @@ const Home = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-white max-w-4xl">
 
               <span className="px-2 rounded ">
-                <span className="border-b-4 border-[var(--accent-color)] text-[var(--accent-color)]">
+                <span className=" text-[var(--accent-color)]">
                 Empowering Leadership. Inspiring Change. Building Tomorrow.
                 </span>
               </span>
