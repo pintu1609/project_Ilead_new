@@ -1,7 +1,7 @@
 export const initiativesData = [
     {
       title: "Celebrating New India",
-      img: "/img/celebratinginitiviates.jpeg",
+      img: "/img/newindia.jpeg",
       desc: {
         short: "A global platform for democratic dialogue and thought leadership.",
         full: "Celebrating New India convenes policymakers, domain experts, academics, and civil society leaders to engage in focused, evidence-based conversations on India’s future. Through surveys, discussions, and content creation, the program promotes inclusive dialogue and helps shape transformative ideas for a progressive society."
