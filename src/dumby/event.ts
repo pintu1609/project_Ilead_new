@@ -29,6 +29,10 @@ export const eventItems = [
     { id: 28, image: '/event/event28.jpeg', desc: '' },
     { id: 29, image: '/event/event29.jpeg', desc: '' },
     { id: 30, image: '/event/event30.jpeg', desc: '' },
-    { id:31,  image: '/event/event31.jpeg', desc: ''},
-    { id:32,  image: '/event/event32.jpeg', desc: ''},
+    { id: 31, image: '/event/event31.jpeg', desc: ''},
+    { id: 32, image: '/event/event32.jpeg', desc: ''},
+    { id: 33, image: '/event/event33.jpeg', desc: ''},
+    { id: 34, image: '/event/event34.jpeg', desc: ''},
+    { id: 35, image: '/event/event35.jpeg', desc: ''},
+    { id: 36, image: '/event/event36.jpeg', desc: ''},
   ];

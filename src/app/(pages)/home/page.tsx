@@ -28,11 +28,11 @@ const Home = () => {
 
       <section id="hero" className={`${style.hero} relative`}>
         {/* Image Container */}
-        <div className={`${style['hero-img']} relative w-full h-[80vh] overflow-hidden`}>
+        <div className={`${style['hero-img']} relative w-full h-[80vh] overflow-hidden `}>
           <Swiper
             modules={[Autoplay, EffectFade]}
             effect="fade"
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             loop={true}
             className="w-full h-[80vh] "
           >
@@ -54,10 +54,10 @@ const Home = () => {
         </div>
 
         <div
-          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-[10]"
+          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center z-[10] bottom-[-150px]"
           data-aos="fade-in"
         >
-          <div className='bg-black/25 px-4 py-2 rounded flex flex-col justify-center items-center '>
+          <div className='bg-black/20 px-4 py-2 rounded flex flex-col justify-center items-center '>
             <h1 className="text-3xl md:text-4xl font-bold text-white max-w-4xl">
 
               <span className="px-2 rounded ">
