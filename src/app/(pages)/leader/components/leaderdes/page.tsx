@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 import AOS from "aos";

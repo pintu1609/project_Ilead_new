@@ -1,5 +1,6 @@
 export const initiativesData = [
     {
+      id: 1,
       title: "Celebrating New India",
       img: "/img/newindia.jpeg",
       desc: {
@@ -8,6 +9,7 @@ export const initiativesData = [
       }
     },
     {
+      id: 2,
       title: "ILead Women",
       img: "/img/ileadwomen.jpeg",
       desc: {
@@ -16,6 +18,7 @@ export const initiativesData = [
       }
     },
     {
+      id: 3,
       title: "Rising Leaders",
       img: "/img/risingleader.jpeg",
       desc: {
